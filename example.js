@@ -2,7 +2,8 @@
 const fastify = require('fastify')()
 
 fastify.register(require('.'), {
-  accessToken: '23dbxxxxxxxxxxxxxxxxxxxxxxxxxxxxdcc7c6dff2f9'
+  accessToken: '7ba345exxxxxxxxxxxxxxdf879',
+  secret: 'SECxxxxxxxxxxxxa5131'
 })
 
 fastify.get('/robot', (request, reply) => {

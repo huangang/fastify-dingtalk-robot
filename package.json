@@ -1,6 +1,6 @@
 {
   "name": "fastify-dingtalk-robot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "fastify plugin for dingtalk robot",
   "main": "index.js",
   "repository": {

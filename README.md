@@ -16,7 +16,8 @@ npm i fastify-dingtalk-robot --save
 
 const fastify = require('fastify')()
 fastify.register(require('fastify-dingtalk-robot'), {
-  accessToken: 'xxxxxxxxx'
+  accessToken: 'xxxxxxxxx',
+  secret: 'SECxxxxxx'
 })
 const { dingtalkRobot } = fastify
 const textContent = {
