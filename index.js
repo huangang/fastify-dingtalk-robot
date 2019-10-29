@@ -12,9 +12,20 @@ function fastifyDingtalkRobot (fastify, options = {}, done) {
     webhook: options.webhook
   })
   if (options.secret) { // 加签密钥
-    const timestamp = Date.now()
-    const sign = signHash(options.secret, timestamp + '\n' + options.secret)
-    robot.webhook = robot.webhook + '&timestamp=' + timestamp + '&sign=' + sign
+    const originWebhook = robot.webhook
+    robot.send = function (content) {
+      const timestamp = Date.now()
+      const sign = signHash(options.secret, timestamp + '\n' + options.secret)
+      const webhook = originWebhook + '&timestamp=' + timestamp + '&sign=' + sign
+      const { httpclient } = this
+      return httpclient.request(webhook, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        data: JSON.stringify(content)
+      })
+    }
   }
   fastify.decorate('dingtalkRobot', robot)
   done()
