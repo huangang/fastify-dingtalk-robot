@@ -1,6 +1,6 @@
 {
   "name": "fastify-dingtalk-robot",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "fastify plugin for dingtalk robot",
   "main": "index.js",
   "repository": {
@@ -15,8 +15,7 @@
   "author": "huangang <huangang.zhang@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
-    "dingtalk-robot-sender": "^1.1.1",
+    "dingtalk-robot-sender": "^1.2.0",
     "fastify-plugin": "^1.6.0"
   },
   "devDependencies": {
