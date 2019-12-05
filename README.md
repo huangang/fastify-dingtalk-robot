@@ -2,7 +2,7 @@
 
 Fastify plugin for dingtalk robot.
 
-[![NPM version](https://img.shields.io/npm/v/fastify-dingtalk-robot.svg?style=flat)](https://www.npmjs.com/package/fastify-dingtalk-robot)
+[![NPM version](https://img.shields.io/npm/v/fastify-dingtalk-robot.svg?style=flat)](https://www.npmjs.com/package/fastify-dingtalk-robot) [![Greenkeeper badge](https://badges.greenkeeper.io/huangang/fastify-dingtalk-robot.svg)](https://greenkeeper.io/)
 
 ## Install
 ```
